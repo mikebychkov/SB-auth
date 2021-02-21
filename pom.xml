@@ -44,6 +44,10 @@
 
         <dependency>
             <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-security</artifactId>
         </dependency>
         <dependency>
@@ -69,7 +73,7 @@
         <java.version>11</java.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <start-class>org.mike.authenticationservice.AuthenticationServiceApplication</start-class>
-        <docker.image.name>mikebychkov/tmx-authentication-service</docker.image.name>
+        <docker.image.name>mikebychkov/sb-auth</docker.image.name>
         <!--suppress UnresolvedMavenProperty -->
         <docker.image.tag>${env.IMG_TAG}</docker.image.tag>
     </properties>
