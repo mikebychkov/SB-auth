@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: auth
+  cloud:
+    kubernetes:
+      reload:
+        enabled: true
+        #strategy: shutdown
+      config:
+        sources:
+          - name: config
